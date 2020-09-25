@@ -10,7 +10,6 @@ const request = require('request');
 
 const ytdl = require("ytdl-core");
 
-const token = 'NjkyNDYxMTQ3Mzc0NDg1NTg2.Xnu2sg.v39yFVBxPwkPpYTGuN8niPVwpbg';
 
 const PREFIX = '$';
 
@@ -167,4 +166,4 @@ bot.on('message', message=>{
        
 
     })
-bot.login(token);
+bot.login(process.env.token);
